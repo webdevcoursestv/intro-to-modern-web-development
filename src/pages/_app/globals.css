@@ -2,10 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply text-white bg-gray-900;
-}
+@layer base {
+  @font-face {
+    font-family: "LuckestGuy";
+    src: url("/luckiest-guy.woff2") format("woff2");
+  }
 
-h1 {
-  @apply text-5xl prose-2xl prose-invert;
+  body {
+    @apply text-white bg-red-800;
+  }
+
+  h1 {
+    @apply text-5xl prose-2xl prose-invert;
+  }
 }
